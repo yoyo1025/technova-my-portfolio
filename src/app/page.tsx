@@ -1,7 +1,7 @@
 'use client'
 
 import { AtSignIcon, InfoIcon, SettingsIcon } from "@chakra-ui/icons";
-import { Avatar, Box, Button, Center, Flex, Heading, Input, Spacer, Tab, TabList, TabPanel, TabPanels, Tabs, useColorMode, useColorModeValue, Wrap, WrapItem } from "@chakra-ui/react";
+import { Avatar, Box, Center, Flex, Tab, TabList, TabPanel, TabPanels, Tabs, Wrap, WrapItem } from "@chakra-ui/react";
 import { Text } from '@chakra-ui/react'
 export default function Home() {
   return (
