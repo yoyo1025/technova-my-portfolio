@@ -1,6 +1,6 @@
 'use client'
 
-import { InfoIcon } from "@chakra-ui/icons";
+import { AtSignIcon, InfoIcon } from "@chakra-ui/icons";
 import { Avatar, Box, Button, Center, Flex, Heading, Input, Spacer, Tab, TabList, TabPanel, TabPanels, Tabs, useColorMode, useColorModeValue, Wrap, WrapItem } from "@chakra-ui/react";
 import { Text } from '@chakra-ui/react'
 export default function Home() {
@@ -49,7 +49,29 @@ export default function Home() {
             </Box>
           </TabPanel>
           <TabPanel>
-            <Text>two!</Text>
+            <Flex alignItems='center' gap="10px">
+              <AtSignIcon boxSize={8}/>
+              <Text>経歴</Text>
+            </Flex>
+            <Box bg='#dce0dd' borderRadius='5' padding='8' marginTop='5'>
+              <Text>2022年4月　芝浦工業大学 システム理工学部 電子情報システム学科　入学</Text>
+              <Text>2022年5月　ナビ個別指導学院　入社</Text>
+              <Text>2024年3月　ナビ個別指導学院　退社</Text>
+              <Text>2026年3月　芝浦工業大学大学院システム理工学専攻　卒業予定</Text>
+            </Box>
+            <Flex alignItems='center' gap="10px"　 paddingTop='5'>
+              <AtSignIcon boxSize={8}/>
+              <Text>インターン</Text>
+            </Flex>
+              <Box bg='#dce0dd' borderRadius='5' padding='8' marginTop='5'>
+                <Text>2024年2月　株式会社Donuts　（長期インターンで現在も就業中）</Text>
+                <Text>2024年7月　株式会社BuySell Technologies（サマーインターン）</Text>
+                <Text>2024年8月　合同会社DMM.com　（サマーインターン）</Text>
+                <Text>2024年8月　株式会社三菱UFJインフォメーションテクノロジー　（サマーインターン）</Text>
+                <Text>2024年8月　株式会社KDDIアジャイル　（サマーインターン）</Text>
+                <Text>2024年9月　株式会社NECソリューションイノベータ　（サマーインターン）</Text>
+                <Text>2024年9月　株式会社Carta Holdings　（サマーインターン）</Text>
+              </Box>
           </TabPanel>
         </TabPanels>
       </Tabs>
