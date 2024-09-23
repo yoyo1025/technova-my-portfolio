@@ -1,7 +1,7 @@
 'use client'
 
 import { AtSignIcon, InfoIcon, SettingsIcon } from "@chakra-ui/icons";
-import { Avatar, Box, Center, Flex, Tab, TabList, TabPanel, TabPanels, Tabs, Wrap, WrapItem, HStack, Icon } from "@chakra-ui/react";
+import { Avatar, Box, Center, Flex, Tab, TabList, TabPanel, TabPanels, Tabs, Wrap, WrapItem, HStack, Icon, Link, Image } from "@chakra-ui/react";
 import { IoLogoTwitter, IoLogoGithub } from "react-icons/io";
 import { Text } from '@chakra-ui/react'
 
@@ -33,6 +33,7 @@ export default function Home() {
           <Tab marginLeft='10'>Career</Tab>
           <Tab marginLeft='10'>Tools</Tab>
           <Tab marginLeft='10'>LINK</Tab>
+          <Tab marginLeft='10'>Activity</Tab>
         </TabList>
         <TabPanels>
           <TabPanel>
@@ -50,7 +51,7 @@ export default function Home() {
                 <br/>
                 普段は株式会社Donutsのミクチャエンジニアチームで長期インターンに取り組んでいます。以前は業務で
                 ミクチャの社内管理ツールのバックエンドを担当することが多かったのですが、最近はそれに加えて
-                WebフロントやDBのパフォーマンス改善を担当しています。
+                WebフロントやDBのパフォーマンス改善、既存アプリのGoへのリプレイスを担当しています。
               </Text>
             </Box>
           </TabPanel>
@@ -106,16 +107,6 @@ export default function Home() {
               <Text fontWeight="bold" color={"#3d3d3d"}>Render</Text>
             </Box>
           </TabPanel>
-          {/* <TabPanel>
-            <Box marginTop={5}>
-              ・GitHub <br/>
-              <GitHubIcon fontSize="large"/>https://github.com/yoyo1025
-            </Box>
-            <Box marginTop={5}>
-              ・X <br/>
-              <XIcon fontSize="large"/>https://x.com/yoyo_021025
-            </Box>
-          </TabPanel> */}
           <TabPanel>
             <Text fontWeight="bold" color={"#939794"} >
               I use Github, Twitter, instagram and Discord. Here are my accounts.
@@ -123,14 +114,35 @@ export default function Home() {
             </Text>
             <HStack mt={7}>
               <Text fontSize={24}>・</Text>
-              <Icon as={IoLogoGithub} boxSize={8} />
-              <Text fontWeight="bold">GitHub</Text>
+              <Link href="https://github.com/yoyo1025" isExternal>
+                <HStack>
+                  <Icon as={IoLogoGithub} boxSize={8} />
+                  <Text fontWeight="bold">GitHub</Text>
+                </HStack>
+              </Link>
             </HStack>
+
             <HStack mt={7}>
               <Text fontSize={24}>・</Text>
-              <Icon as={IoLogoTwitter} boxSize={8} />
-              <Text fontWeight="bold">Twitter</Text>
+              <Link href="https://twitter.com/yoyo_021025" isExternal>
+                <HStack>
+                  <Icon as={IoLogoTwitter} boxSize={8} />
+                  <Text fontWeight="bold">Twitter</Text>
+                </HStack>
+              </Link>
             </HStack>
+          </TabPanel>
+          <TabPanel>
+            <Center>
+            <Flex gap={10}>
+            <Box mt={5}>
+              <Image src="/my-app-1.png" alt="My App 1" width="500px" height="350px" />
+            </Box>
+            <Box mt={5}>
+              <Image src="/my-app-2.png" alt="My App 2" width="500px" height="350px" />
+            </Box>
+            </Flex>
+            </Center>
           </TabPanel>
         </TabPanels>
       </Tabs>
