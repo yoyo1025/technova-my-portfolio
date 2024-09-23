@@ -3,6 +3,7 @@
 import { AtSignIcon, InfoIcon, SettingsIcon } from "@chakra-ui/icons";
 import { Avatar, Box, Center, Flex, Tab, TabList, TabPanel, TabPanels, Tabs, Wrap, WrapItem } from "@chakra-ui/react";
 import { Text } from '@chakra-ui/react'
+import GitHubIcon from '@mui/icons-material/GitHub';
 export default function Home() {
   return (
     <>
@@ -29,6 +30,7 @@ export default function Home() {
           <Tab marginLeft='10'>About</Tab>
           <Tab marginLeft='10'>Career</Tab>
           <Tab marginLeft='10'>Tools</Tab>
+          <Tab marginLeft='10'>LINK</Tab>
         </TabList>
         <TabPanels>
           <TabPanel>
@@ -79,26 +81,29 @@ export default function Home() {
               <Text>使用可能技術</Text>
             </Flex>
             ・フロントエンド
-            <Box bg='#daede3' borderRadius='5' padding='5'>
+            <Box bg='#83ebc1' borderRadius='5' padding='5'>
               <Text>TypeScript / React / Next.js</Text>
             </Box>
             ・バックエンド
-            <Box bg='#daede3' borderRadius='5' padding='5'>
+            <Box bg='#72cef2' borderRadius='5' padding='5'>
               <Text>Go / Echo</Text>
               <Text>Java / SpringBoot</Text>
             </Box>
             ・データベース
-            <Box bg='#daede3' borderRadius='5' padding='5'>
+            <Box bg='#c2a3f7' borderRadius='5' padding='5'>
               <Text>RDBMS (MySQL / PostgreSQL)</Text>
             </Box>
             ・インフラ/その他
-            <Box bg='#daede3' borderRadius='5' padding='5'>
+            <Box bg='#cccccc' borderRadius='5' padding='5'>
               <Text>Git / GitHub</Text>
               <Text>Docker</Text>
               <Text>AWS</Text>
               <Text>Firebase</Text>
               <Text>Render</Text>
             </Box>
+          </TabPanel>
+          <TabPanel>
+            <GitHubIcon/>
           </TabPanel>
         </TabPanels>
       </Tabs>
