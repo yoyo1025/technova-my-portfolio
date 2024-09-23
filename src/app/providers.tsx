@@ -10,9 +10,9 @@ export function Providers({ children }: { children: React.ReactNode }) {
     return (
         <CacheProvider>
             <ChakraProvider>
-                <ThemeProvider theme={theme}>
+                {/* <ThemeProvider theme={theme}> */}
                     {children}
-                </ThemeProvider>
+                {/* </ThemeProvider> */}
             </ChakraProvider>
         </CacheProvider>
     )
